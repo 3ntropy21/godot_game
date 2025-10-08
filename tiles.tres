@@ -1,0 +1,51 @@
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://dtkpj3cwv2y8e"]
+
+[ext_resource type="Texture2D" uid="uid://bt8kq1sny6x1v" path="res://sprites/Tile_set.png" id="1_uwjgd"]
+[ext_resource type="Texture2D" uid="uid://clj6rn4niiebc" path="res://sprites/Cracked_tile_set.png" id="2_rngrc"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_74lek"]
+texture = ExtResource("1_uwjgd")
+texture_region_size = Vector2i(10, 10)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5, -5, 5, -5, 5, 5, -5, 5)
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+1:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-5, -5, 5, -5, 5, 5, -5, 5)
+1:1/0/custom_data_0 = true
+2:1/0 = 0
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5, -5, 5, -5, 5, 5, -5, 5)
+1:2/0 = 0
+2:2/0 = 0
+3:3/0 = 0
+4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5, -5, 5, 5, -5, 5)
+2:4/0 = 0
+1:3/0 = 0
+0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5, -5, 5, 5, -5, 5)
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5, -5, 5, -5, 5, 5, -5, 5)
+3:1/0 = 0
+3:1/0/physics_layer_2/polygon_0/points = PackedVector2Array(-5, -5, 5, -5, 5, 5, -5, 5)
+3:1/0/custom_data_1 = true
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5, -5, 5, -5, 5, 5, -5, 5)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hvaw5"]
+texture = ExtResource("2_rngrc")
+texture_region_size = Vector2i(10, 10)
+
+[resource]
+tile_size = Vector2i(10, 10)
+physics_layer_0/collision_layer = 2
+physics_layer_1/collision_layer = 16
+physics_layer_2/collision_layer = 32
+custom_data_layer_0/name = "Player1Wall"
+custom_data_layer_0/type = 1
+custom_data_layer_1/name = "Player2Wall"
+custom_data_layer_1/type = 1
+sources/0 = SubResource("TileSetAtlasSource_74lek")
+sources/1 = SubResource("TileSetAtlasSource_hvaw5")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clj6rn4niiebc"
-path="res://.godot/imported/Cracked_tile_set.png-ea93f755ff913f6212db6f71c2ddf1be.ctex"
+uid="uid://t0s2dipq4tht"
+path="res://.godot/imported/icon.svg-6ecb5a4d17c18f55a8ca960c71122834.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Cracked_tile_set.png"
-dest_files=["res://.godot/imported/Cracked_tile_set.png-ea93f755ff913f6212db6f71c2ddf1be.ctex"]
+source_file="res://trash/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-6ecb5a4d17c18f55a8ca960c71122834.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

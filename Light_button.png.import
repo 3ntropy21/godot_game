@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clj6rn4niiebc"
-path="res://.godot/imported/Cracked_tile_set.png-ea93f755ff913f6212db6f71c2ddf1be.ctex"
+uid="uid://cw5n2arthkkhl"
+path="res://.godot/imported/Light_button.png-943618c19302d85ad8b28826e3efeb6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Cracked_tile_set.png"
-dest_files=["res://.godot/imported/Cracked_tile_set.png-ea93f755ff913f6212db6f71c2ddf1be.ctex"]
+source_file="res://sprites/Light_button.png"
+dest_files=["res://.godot/imported/Light_button.png-943618c19302d85ad8b28826e3efeb6e.ctex"]
 
 [params]
 

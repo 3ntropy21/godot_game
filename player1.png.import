@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clj6rn4niiebc"
-path="res://.godot/imported/Cracked_tile_set.png-ea93f755ff913f6212db6f71c2ddf1be.ctex"
+uid="uid://dcx8vspj03tmh"
+path="res://.godot/imported/player1.png-db180fedc225aaaa8c7051f6daa88f2e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Cracked_tile_set.png"
-dest_files=["res://.godot/imported/Cracked_tile_set.png-ea93f755ff913f6212db6f71c2ddf1be.ctex"]
+source_file="res://trash/player1.png"
+dest_files=["res://.godot/imported/player1.png-db180fedc225aaaa8c7051f6daa88f2e.ctex"]
 
 [params]
 

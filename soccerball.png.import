@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clj6rn4niiebc"
-path="res://.godot/imported/Cracked_tile_set.png-ea93f755ff913f6212db6f71c2ddf1be.ctex"
+uid="uid://3rxnklw7382i"
+path="res://.godot/imported/soccerball.png-5178a50789eec96fd53f6f934050dd4a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Cracked_tile_set.png"
-dest_files=["res://.godot/imported/Cracked_tile_set.png-ea93f755ff913f6212db6f71c2ddf1be.ctex"]
+source_file="res://sprites/soccerball.png"
+dest_files=["res://.godot/imported/soccerball.png-5178a50789eec96fd53f6f934050dd4a.ctex"]
 
 [params]
 
