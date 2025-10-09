@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnsoo7jdkyvbv"]
+
+[ext_resource type="Script" uid="uid://bqxb2rsospfhw" path="res://scenes/clicker.gd" id="1_ecl7i"]
+
+[node name="clicker" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ecl7i")
+
+[node name="click" type="Button" parent="."]
+layout_mode = 0
+offset_left = 255.0
+offset_top = 62.0
+offset_right = 380.0
+offset_bottom = 122.0
+
+[node name="Label" type="Label" parent="click"]
+layout_mode = 1
+offset_right = 125.0
+offset_bottom = 60.0
+text = "click me"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 180.0
+offset_right = 338.0
+offset_bottom = 203.0
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="button_down" from="click" to="." method="_on_click_button_down"]

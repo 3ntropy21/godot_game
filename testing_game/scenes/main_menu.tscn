@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=3 uid="uid://dr8l30n8heu2w"]
+
+[ext_resource type="Script" uid="uid://cfa0lvapan6uc" path="res://scenes/main_menu.gd" id="1_l6cm7"]
+[ext_resource type="Texture2D" uid="uid://dy0ausryvhmyb" path="res://sprites/background_complete.png" id="2_ekxnf"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l6cm7")
+
+[node name="MainGame" type="Button" parent="."]
+layout_mode = 0
+offset_left = 206.0
+offset_top = 104.0
+offset_right = 300.0
+offset_bottom = 134.0
+text = "MAIN GAME"
+
+[node name="Tag" type="Button" parent="."]
+layout_mode = 0
+offset_left = 389.0
+offset_top = 128.0
+offset_right = 459.0
+offset_bottom = 158.0
+text = "TEST"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(320, 180)
+zoom = Vector2(3, 3)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 51.0
+offset_right = 162.0
+offset_bottom = 94.0
+text = "Clicker"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(323, 186)
+texture = ExtResource("2_ekxnf")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 164.0
+offset_top = 61.0
+offset_right = 626.0
+offset_bottom = 84.0
+text = "Breadyn and his two halves: a tale of duailty and adventure "
+
+[node name="Soccer" type="Button" parent="."]
+layout_mode = 0
+offset_left = 310.0
+offset_top = 152.0
+offset_right = 386.0
+offset_bottom = 186.0
+text = "SOCCER"
+
+[connection signal="button_down" from="MainGame" to="." method="_on_main_game_button_down"]
+[connection signal="button_down" from="Tag" to="." method="_on_tag_button_down"]
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_down" from="Soccer" to="." method="_on_soccer_button_down"]

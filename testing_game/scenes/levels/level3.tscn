@@ -1,0 +1,78 @@
+[gd_scene load_steps=6 format=4 uid="uid://cxo4qxidem181"]
+
+[ext_resource type="PackedScene" uid="uid://c3cxy7eoelfa1" path="res://scenes/test.tscn" id="1_02w4s"]
+[ext_resource type="Texture2D" uid="uid://ktgayls617sw" path="res://sprites/barrier_dark.png" id="2_sru4k"]
+[ext_resource type="Texture2D" uid="uid://dw5gh3w0itawf" path="res://sprites/barrier_light.png" id="3_t275y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yk7ts"]
+size = Vector2(10, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uacia"]
+size = Vector2(10, 10)
+
+[node name="test" instance=ExtResource("1_02w4s")]
+
+[node name="TileMapLayer" parent="." index="3"]
+tile_map_data = PackedByteArray("AAAhAB0AAAAEAAAAAAAiAB0AAAAEAAAAAAAjAB0AAAAEAAAAAAAkAB0AAAAEAAAAAAAlAB0AAAAEAAAAAAAmAB0AAAAEAAAAAAAnAB0AAAAEAAAAAAAoAB0AAAAEAAAAAAApAB0AAAAEAAAAAAAqAB0AAAAEAAAAAAArAB0AAAAEAAAAAAAsAB0AAAAEAAAAAAAtAB0AAAAEAAAAAAAtABwAAAAEAAAAAAAtABsAAAAEAAAAAAAtABoAAAAEAAAAAAAtABkAAAAEAAAAAAAtABgAAAAEAAAAAAAtABcAAAAEAAAAAAAtABYAAAAEAAAAAAAtABUAAAAEAAAAAAAtABQAAAAEAAAAAAAtABMAAAAEAAAAAAAtABIAAAAEAAAAAAASABAAAAAAAAAAAAATABAAAAAAAAAAAAAWABAAAAAAAAAAAAAYABAAAAAAAAAAAAAZABAAAAAAAAAAAAAaABAAAAAAAAAAAAAbABAAAAAAAAAAAAAcABAAAAAAAAAAAAAdABAAAAAAAAAAAAAeABAAAAAAAAAAAAAfABAAAAAAAAAAAAAgABAAAAAEAAAAAAAhABAAAAAEAAAAAAAiABAAAAAEAAAAAAAjABAAAAAEAAAAAAAkABAAAAAEAAAAAAAlABAAAAAEAAAAAAAmABAAAAAEAAAAAAAnABAAAAAEAAAAAAAoABAAAAAEAAAAAAApABAAAAAEAAAAAAAqABAAAAAEAAAAAAArABAAAAAEAAAAAAAsABAAAAAEAAAAAAAtABAAAAAEAAAAAAAtABEAAAAEAAAAAAAXABAAAAAAAAAAAAAVABAAAAAAAAAAAAAUABAAAAAAAAAAAAASABEAAAAAAAAAAAASABIAAAAAAAAAAAASABMAAAAAAAAAAAASABQAAAAAAAAAAAASABUAAAAAAAAAAAASABYAAAAAAAAAAAASABcAAAAAAAAAAAASABgAAAAAAAAAAAASABkAAAAAAAAAAAASABoAAAAAAAAAAAASABsAAAAAAAAAAAASABwAAAAAAAAAAAASAB0AAAAAAAAAAAATAB0AAAAAAAAAAAAUAB0AAAAAAAAAAAAVAB0AAAAAAAAAAAAWAB0AAAAAAAAAAAAXAB0AAAAAAAAAAAAYAB0AAAAAAAAAAAAZAB0AAAAAAAAAAAAaAB0AAAAAAAAAAAAbAB0AAAAAAAAAAAAcAB0AAAAAAAAAAAAdAB0AAAAAAAAAAAAeAB0AAAAAAAAAAAAfAB0AAAAAAAAAAAAgAB0AAAAEAAAAAAAnABwAAAACAAQAAAAYABwAAAACAAAAAAAfABEAAAACAAIAAAAgABEAAAACAAIAAAAfABIAAAAAAAAAAAAfABMAAAAAAAAAAAAfABQAAAAAAAAAAAAfABUAAAAAAAAAAAAfABYAAAAAAAAAAAAfABcAAAAAAAAAAAAfABgAAAAAAAAAAAAfABkAAAAAAAAAAAAfABoAAAAAAAAAAAAfABsAAAAAAAAAAAAfABwAAAAAAAAAAAAgABIAAAAEAAAAAAAgABMAAAAEAAAAAAAgABQAAAAEAAAAAAAgABUAAAAEAAAAAAAgABYAAAAEAAAAAAAgABcAAAAEAAAAAAAgABgAAAAEAAAAAAAgABoAAAAEAAAAAAAgABsAAAAEAAAAAAAgABwAAAAEAAAAAAAhABwAAAAEAAQAAAAhABsAAAADAAEAAAAiABsAAAADAAEAAAAiABwAAAADAAEAAAAhABoAAAABAAEAAAAiABoAAAABAAEAAAAgABkAAAAEAAAAAAAjABoAAAADAAEAAAAkABoAAAADAAEAAAAlABoAAAADAAEAAAApABoAAAAEAAAAAAAqABoAAAAEAAAAAAArABoAAAAEAAAAAAAsABoAAAAEAAAAAAAeABEAAAADAAEAAAArABsAAAABAAEAAAArABwAAAABAAEAAAAsABsAAAABAAEAAAAsABwAAAAAAAQAAAATABoAAAAAAAAAAAAUABoAAAAAAAAAAAAVABoAAAAAAAAAAAAWABoAAAAAAAAAAAAaABoAAAAAAAAAAAAbABoAAAAAAAAAAAAcABoAAAAAAAAAAAAdABoAAAAAAAAAAAAeABoAAAAAAAAAAAA=")
+
+[node name="End1" parent="." index="4"]
+position = Vector2(315, 175)
+
+[node name="End2" parent="." index="5"]
+position = Vector2(325, 175)
+
+[node name="BarrierButtonDark" parent="LevelComponents" index="1"]
+position = Vector2(445, 285)
+
+[node name="BarrierButtonLight" parent="LevelComponents" index="2"]
+position = Vector2(335, 285)
+
+[node name="BarrierDark" parent="LevelComponents/DarkBarriers" index="0"]
+position = Vector2(235, 265)
+
+[node name="BarrierDark2" type="StaticBody2D" parent="LevelComponents/DarkBarriers" index="1"]
+position = Vector2(245, 265)
+collision_layer = 2
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="LevelComponents/DarkBarriers/BarrierDark2" index="0"]
+texture = ExtResource("2_sru4k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelComponents/DarkBarriers/BarrierDark2" index="1"]
+shape = SubResource("RectangleShape2D_yk7ts")
+
+[node name="BarrierDark3" type="StaticBody2D" parent="LevelComponents/DarkBarriers" index="2"]
+position = Vector2(255, 265)
+collision_layer = 2
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="LevelComponents/DarkBarriers/BarrierDark3" index="0"]
+texture = ExtResource("2_sru4k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelComponents/DarkBarriers/BarrierDark3" index="1"]
+shape = SubResource("RectangleShape2D_yk7ts")
+
+[node name="BarrierLight" parent="LevelComponents/LightBarriers" index="0"]
+position = Vector2(385, 265)
+
+[node name="BarrierLight2" type="StaticBody2D" parent="LevelComponents/LightBarriers" index="1"]
+position = Vector2(395, 265)
+collision_layer = 2
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="LevelComponents/LightBarriers/BarrierLight2" index="0"]
+texture = ExtResource("3_t275y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelComponents/LightBarriers/BarrierLight2" index="1"]
+shape = SubResource("RectangleShape2D_uacia")
+
+[node name="BarrierLight3" type="StaticBody2D" parent="LevelComponents/LightBarriers" index="2"]
+position = Vector2(405, 265)
+collision_layer = 2
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="LevelComponents/LightBarriers/BarrierLight3" index="0"]
+texture = ExtResource("3_t275y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelComponents/LightBarriers/BarrierLight3" index="1"]
+shape = SubResource("RectangleShape2D_uacia")
